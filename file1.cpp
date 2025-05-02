@@ -47,3 +47,18 @@ void bubbleSortArray()
         pass = pass + 1; // step 4
     } while (pass <= nPanjang - 1); // step 5
 }
+void display()
+{
+    cout << endl;
+    cout << "=================================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "=================================" << endl;
+    cout << endl;
+    for (int j = 0; j < nPanjang; j++)
+    {
+        cout << element[j];
+        if (j<nPanjang-1){
+            cout << " -->";
+        }
+    }
+}
